@@ -76,7 +76,7 @@ class PhotoTest(TestCase):
 
     def tearDown(self):
         # remove all files from the dynamic_media/avatars directory
-        folder = os.path.join(os.path.dirname(__file__), '../static')
+        folder = os.path.join(os.path.dirname(__file__), '../myproject/media')
         for the_file in os.listdir(folder):
             if re.search('^test-image', the_file):
                 file_path = os.path.join(folder, the_file)
