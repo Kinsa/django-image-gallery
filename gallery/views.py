@@ -8,5 +8,5 @@ def gallery_detail(request, slug):
     gallery = get_object_or_404(PhotoSet, slug=slug)
 
     return render_to_response('gallery/photoset_detail.html',
-        {'object': gallery, 'can_login': can_login},
+        {'object': gallery},
         context_instance=RequestContext(request))
