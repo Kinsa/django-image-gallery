@@ -22,9 +22,6 @@ Include in the PIP requirements file the following lines:
 
 ::
 
- PIL==1.1.6
- sorl-thumbnail==3.2.5
- south==0.7.6
  -e git://github.com/jbergantine/django-image-gallery.git#egg=gallery
 
 And then install as normal (IE:)
@@ -43,19 +40,24 @@ Add to the project's settings file tuple of INSTALLED_APPS:
  'gallery',
  'pil',
  'sorl.thumbnail',
- 'south'
 
-Sync the database to finish installing sorl-thumbnail.
+If you're using South, initiate the gallery application.
+
+::
+
+ $ python manage.py schemamigration gallery --auto
+
+Sync the database to finish installing sorl-thumbnail and gallery if you aren't using South.
 
 ::
 
  $ python manage.py syncdb
 
-Migrate the database to finish installing gallery.
+If you're using South, migrate the gallery application to finish installing it.
 
 ::
 
- $ python manage.py migrate
+ $ python manage.py migrate gallery
 
 In the project's urls.py file add: 
 
@@ -67,13 +69,13 @@ A list of galleries can now be linked to:
 
 ::
 
- <a href="{% url gallery_list %}">Image Galleries</a>
+ <a href="{% url 'gallery_list' %}">Image Galleries</a>
     
 Individual galleries can be linked to by passing their ``slug`` to ``gallery_detail``:
 
 ::
 
- <a href="{% url gallery_detail 'slug' %}">A Gallery</a>
+ <a href="{% url 'gallery_detail' 'slug' %}">A Gallery</a>
 
 Configure the Templates
 =======================

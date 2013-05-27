@@ -68,6 +68,12 @@ for dirpath, dirnames, filenames in os.walk(extensions_dir):
 
 version = __import__('gallery').__version__
 
+install_requires = [
+    'Django>=1.3',
+    'PIL>=1.1.6',
+    'sorl-thumbnail>=3.2.5',
+]
+
 setup(
     name='django-image-gallery',
     version=version,
@@ -85,6 +91,7 @@ for Django projects. See the project page for more information:
     packages=packages,
     cmdclass=cmdclasses,
     data_files=data_files,
+    install_requires=install_requires,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
