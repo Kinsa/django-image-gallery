@@ -13,8 +13,6 @@ Installation from Source
  $ cd django-image-gallery
  $ python setup.py install
 
-You will also have to install `PIL <http://pypi.python.org/pypi/PIL>`_, `sorl-thumbnail <http://pypi.python.org/pypi/sorl-thumbnail/>`_, and `South <http://pypi.python.org/pypi/South/>`_.
-
 Installation via PIP Requirements File
 ======================================
 
