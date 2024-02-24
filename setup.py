@@ -80,12 +80,12 @@ setup(
     description="Multi-gallery Image Gallery for Django",
     long_description="""django-image-gallery creates a multi-gallery image gallery application
 for Django projects. See the project page for more information:
-  https://github.com/jbergantine/django-image-gallery""",
-    author='Joe Bergantine',
-    author_email='jbergantine@gmail.com',
-    maintainer='Joe Bergantine',
-    maintainer_email='jbergantine@gmail.com',
-    url='https://github.com/jbergantine/django-image-gallery',
+  https://github.com/Kinsa/django-image-gallery""",
+    author='Kinsa Creative Incorporated',
+    author_email='enquiries@kinsa.cc',
+    maintainer='Kinsa Creative Incorporated',
+    maintainer_email='enquiries@kinsa.cc',
+    url='https://github.com/Kinsa/django-image-gallery',
     license='New BSD License',
     platforms=['any'],
     packages=packages,

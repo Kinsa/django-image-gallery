@@ -9,7 +9,7 @@ Installation from Source
 
 ::
 
- $ git clone git://github.com/jbergantine/django-image-gallery.git
+ $ git clone git://github.com/Kinsa/django-image-gallery.git
  $ cd django-image-gallery
  $ python setup.py install
 
@@ -20,7 +20,7 @@ Include in the PIP requirements file the following lines:
 
 ::
 
- -e git://github.com/jbergantine/django-image-gallery.git#egg=gallery
+ -e git://github.com/Kinsa/django-image-gallery.git#egg=gallery
 
 And then install as normal (IE:)
 
